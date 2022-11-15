@@ -10,6 +10,6 @@ Using [Sass](sass-lang.com/) to import a CSS [reset](https://www.joshwcomeau.com
 
 - [The Challenge](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-z8hkssECo1)
 
-- [My solution](./challenges/1-product-card-component/product-card.html)
+- [My solution](https://sikudev.github.io/challenges/1-product-card-component/product-card.html)
 
-- [Source Code](https://github.com/SikuDev/sikudev.github.io/tree/main/challenges/1-product-card-component)
+- [Source](./challenges/1-product-card-component/product-card.htmlt)
