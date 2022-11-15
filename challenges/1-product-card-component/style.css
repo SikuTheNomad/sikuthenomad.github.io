@@ -131,7 +131,7 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-width: 375px;
+    max-width: 365px;
     grid: auto auto/auto;
     margin: 20px auto;
   }
@@ -139,7 +139,7 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 360px;
+    width: 365px;
     row-gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
