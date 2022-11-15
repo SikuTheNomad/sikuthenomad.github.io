@@ -1,73 +1,56 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+@import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-#root, #__next {
-  isolation: isolate;
-}
-
 /* 
   TODO: Clean up CSS by improving selectors
 */
+// Images
+$desktop-product-image: url(./images/image-product-desktop.jpg);
+$mobile-product-image: url(./images/image-product-mobile.jpg);
+
+// Primary Colors
+$darkcyan: hsl(158 36% 37%);
+$darkercyan: hsl(156, 42%, 26%);
+$darkestcyan: hsl(156, 42%, 18%);
+$cream: hsl(30 38% 92%);
+// Neutral Colors
+$verydarkblue: hsl(212 21% 14%);
+$darkgrayishblue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+// Fonts
+$montserrat: "Montserrat",
+sans-serif;
+$fraunces: "Fraunces",
+serif;
+
 h1 {
-  font-family: "Fraunces", serif;
+  font-family: $fraunces;
   font-size: 2.5rem;
   line-height: 1em;
-  color: hsl(212deg, 21%, 14%);
+  color: $verydarkblue;
 }
 
 html,
 body {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: $montserrat;
   font-size: 14px;
-  background-color: hsl(30deg, 38%, 92%);
-  color: hsl(228deg, 12%, 48%);
+  background-color: $cream;
+  color: $darkgrayishblue;
   display: flex;
 }
 
 .product-image {
-  content: url(./images/image-product-desktop.jpg);
+  content: $desktop-product-image;
 }
 
 .card {
   display: grid;
-  grid: 450px/300px 300px;
-  background-color: hsl(0deg, 0%, 100%);
+  grid: 450px / 300px 300px;
+  background-color: $white;
   border-radius: 1rem;
   overflow: hidden;
   margin: auto;
+  margin
 }
 
 .info {
@@ -93,7 +76,7 @@ body {
 
 .price-new {
   margin-right: 1.5rem;
-  color: hsl(158deg, 36%, 37%);
+  color: $darkcyan
 }
 
 .price-old {
@@ -107,8 +90,8 @@ body {
   align-items: center;
   border: 0;
   border-radius: 0.5rem;
-  background-color: hsl(158deg, 36%, 37%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: $darkcyan;
+  color: $white;
 }
 
 .add-to-cart * {
@@ -116,33 +99,32 @@ body {
 }
 
 .add-to-cart:hover {
-  background-color: hsl(156deg, 42%, 26%);
+  background-color: $darkercyan;
 }
 
 .add-to-cart:active {
-  background-color: hsl(156deg, 42%, 18%);
+  background-color: $darkestcyan;
 }
 
 @media (max-width: 600px) {
   h1 {
     font-size: 2.4rem;
   }
+
   .product-image {
-    content: url(./images/image-product-mobile.jpg);
+    content: $mobile-product-image;
   }
+
   .card {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     max-width: 355px;
-    grid: auto auto/auto;
+    grid: auto auto / auto;
     margin: 10px auto;
   }
+
   .info {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
     row-gap: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

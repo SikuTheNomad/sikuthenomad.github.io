@@ -16,7 +16,7 @@
 .prettierignore
 
 # Custom File Extensions
-*.scss
+# *.scss
 
 #Custom Directories
 design/
