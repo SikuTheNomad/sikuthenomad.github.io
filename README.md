@@ -12,4 +12,4 @@ Using [Sass](sass-lang.com/) to import a CSS [reset](https://www.joshwcomeau.com
 
 - [My solution](https://sikudev.github.io/challenges/1-product-card-component/product-card.html)
 
-- [Source](./challenges/1-product-card-component/product-card.htmlt)
+- [Source](https://github.com/SikuDev/sikudev.github.io/tree/main/challenges/1-product-card-component)
