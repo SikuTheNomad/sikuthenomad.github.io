@@ -37,99 +37,110 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-:root {
-  --darkcyan: hsl(158 36% 37%);
-  --cream: hsl(30 38% 92%);
-  --verydarkblue: hsl(212 21% 14%);
-  --darkgrayishblue: hsl(228, 12%, 48%);
-  --white: hsl(0, 0%, 100%);
+/* 
+  TODO: Create breakpoints (Desktop: 1440)(Mobile:375)
+  TODO: Clean up CSS by improving selectors
+*/
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  line-height: 1em;
+  color: hsl(212deg, 21%, 14%);
 }
 
-html {
-  background-color: var(--cream);
-  width: 100%;
-  height: 100%;
-}
-
+html,
 body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30deg, 38%, 92%);
+  color: hsl(228deg, 12%, 48%);
   display: flex;
 }
 
+.product-image {
+  content: url(./images/image-product-desktop.jpg);
+}
+
 .card {
-  width: 540px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: white;
   display: grid;
-  grid: 1fr/1fr 1fr;
-  border-radius: 10px;
-  box-shadow: 0 0 0.2em 0 hsla(0deg, 0%, 0%, 0.1);
-  margin: auto;
+  grid: 450px/300px 300px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
   overflow: hidden;
+  margin: auto;
 }
 
 .info {
+  width: 300px;
+  height: 450px;
+  padding: 30px;
   display: grid;
-  margin: 1em 2em;
+  grid: 20px 90px 90px 30px 50px;
+  align-items: center;
+  overflow: hidden;
 }
 
 .category {
-  font-family: "Montserrat";
-  font-weight: 100;
   font-variant: small-caps;
-  letter-spacing: 0.2em;
-  opacity: 50%;
-}
-
-.product {
-  font-family: "Fraunces", serif;
-  line-height: 1em;
-}
-
-.description {
-  font-family: "Montserrat";
-  font-size: small;
-  opacity: 50%;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
 }
 
 .price {
-  display: grid;
-  grid: 1fr/1fr 1fr;
+  display: flex;
   align-items: center;
 }
 
 .price-new {
-  font-family: "Fraunces", serif;
-  color: var(--darkcyan);
+  margin-right: 1.5rem;
+  color: hsl(158deg, 36%, 37%);
 }
 
 .price-old {
-  font-family: "Montserrat";
   text-decoration: line-through;
-  font-size: smaller;
-  text-align: center;
-  opacity: 50%;
 }
 
 .add-to-cart {
-  width: 100%;
-  height: 3rem;
-  font-family: "Montserrat", serif;
-  font-weight: 700;
-  background: var(--darkcyan);
-  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0;
-  border-radius: 10px;
+  border-radius: 0.5rem;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.add-to-cart * {
+  padding: 0.25rem;
+}
+
+.add-to-cart:hover {
+  background-color: hsl(156deg, 42%, 26%);
 }
 
 .add-to-cart:active {
-  background: var(--verydarkblue);
+  background-color: hsl(156deg, 42%, 18%);
 }
 
-.icon-cart {
-  display: inline;
-  vertical-align: middle;
-  padding-bottom: 0.25em;
-  margin-right: 0.5em;
+@media (max-width: 600px) {
+  .product-image {
+    content: url(./images/image-product-mobile.jpg);
+  }
+  .card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 375px;
+    grid: auto auto/auto;
+    margin: 20px auto;
+  }
+  .info {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 360px;
+    row-gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
