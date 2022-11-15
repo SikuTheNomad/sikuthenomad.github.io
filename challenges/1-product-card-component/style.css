@@ -131,15 +131,15 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-width: 365px;
+    max-width: 355px;
     grid: auto auto/auto;
-    margin: 20px auto;
+    margin: 10px auto;
   }
   .info {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 365px;
+    width: 100%;
     row-gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
