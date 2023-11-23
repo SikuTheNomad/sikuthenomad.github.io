@@ -55,6 +55,8 @@ h3, a {
   font-size: 28px;
   background-color: transparent;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 p {
