@@ -31,7 +31,7 @@ hr {
 }
 
 hr.solid {
-  border: 0px solid rgba(20, 20, 20, 0);
+  border: 10px solid rgba(20, 20, 20, 0);
 }
 
 h1 {
@@ -56,6 +56,8 @@ h3, a {
   font-size: 28px;
   background-color: transparent;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -73,13 +75,13 @@ a.name:visited {
   color: white;
 }
 
-a.name:link {
+/* a.name:link {
   color: white;
   letter-spacing: 2px;
   font-size: 40px;
   text-decoration: none;
   background-color: transparent;
-}
+} */
 
 a.name:hover {
   cursor: url("/p5js/images/cursorHover.png"), auto;
