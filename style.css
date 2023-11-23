@@ -1,5 +1,5 @@
 * {
-  cursor: url("/p5js/images/cursor.png"), auto;
+  cursor: url("images/cursor.png"), auto;
   background-color: rgb(20, 20, 20);
   text-align: center;
   color: white;
@@ -8,19 +8,8 @@
   font-weight: 100;
 }
 
- /* Hide scrollbar for Chrome, Safari and Opera */
- body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-} 
-
 img:hover {
-  cursor: url("/p5js/images/cursorHover.png"), auto;
+  cursor: url("images/cursorHover.png"), auto;
 }
 
 hr {
@@ -31,7 +20,7 @@ hr {
 }
 
 hr.solid {
-  border: 10px solid rgba(20, 20, 20, 0);
+  border: 0px solid rgba(20, 20, 20, 0);
 }
 
 h1 {
@@ -41,7 +30,7 @@ h1 {
 }
 
 h1:hover {
-  cursor: url("/p5js/images/cursorHover.png"), auto;
+  cursor: url("images/cursorHover.png"), auto;
   color: hsl(170, 100%, 50%);
 }
 
@@ -51,13 +40,10 @@ h2 {
   background-color: transparent;
 }
 
-h3, a {
+h3 {
   letter-spacing: 2px;
   font-size: 28px;
   background-color: transparent;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
 
 p {
@@ -67,7 +53,7 @@ p {
 }
 
 a:hover {
-  cursor: url("/p5js/images/cursorHover.png"), auto;
+  cursor: url("images/cursorHover.png"), auto;
   color: turquoise;
 }
 
@@ -75,15 +61,15 @@ a.name:visited {
   color: white;
 }
 
-/* a.name:link {
+a.name:link {
   color: white;
   letter-spacing: 2px;
   font-size: 40px;
   text-decoration: none;
   background-color: transparent;
-} */
+}
 
 a.name:hover {
-  cursor: url("/p5js/images/cursorHover.png"), auto;
+  cursor: url("images/cursorHover.png"), auto;
   color: hsl(170, 100%, 50%);
 }
