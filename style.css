@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 * {
-  cursor: url("images/cursor.png"), auto;
+  cursor: url(images/cursor.png), auto;
   background-color: rgb(20, 20, 20);
   text-align: center;
   color: white;
-  font-family: monospace;
-  font-variant: small-caps;
+  font-family: 'Major Mono Display', monospace;
+  /* font-variant: small-caps; */
   font-weight: 100;
 }
 
@@ -15,6 +17,7 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
+  height: 100vh;
   scrollbar-width: none;  /* Firefox */
 } 
 

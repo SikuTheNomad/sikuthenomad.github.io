@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="darkreader-lock">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header>
+        Credits to <a href="https://scrimba.com/learn/learnjavascript">Scrimba</a> <a
+            href="https://scrimba.com/playlist/pbnBJTp">module</a>
+    </header>
+
+    <div class="container">
+        <h1>Generate a <br><span class="green">random password</span></h1>
+        <h2>Never use an insecure password again.</h2>
+
+        <div class="options">
+
+            <button class="generate" id="generate-btn">Generate passwords</button>
+
+            <div class="checkboxes">
+                <label class="label-checkbox" for="numbers">
+                    <input type="checkbox" name="numbers" id="numbers-chk" value="true" autocomplete="off" checked>
+                    Numbers
+                </label>
+                <label class="label-checkbox" for="symbols">
+                    <input type="checkbox" name="numbers" id="symbols-chk" value="true" autocomplete="off" checked>
+                    Symbols
+                </label>
+            </div>
+            <label class="label-number" for="length">
+                Length
+                <div class="length-input">
+                    <button class="length-btn dec" id="dec-length">-</button>
+                    <span id="password-length">15</span>
+                    <button class="length-btn inc" id="inc-length">+</button>
+                </div>
+            </label>
+        </div>
+
+        <hr>
+
+        <p>Click on the password you prefer to copy to clipboard.</p>
+
+        <div class="passwords">
+            <button class="password-btn" id="password-one"></button>
+            <button class="password-btn" id="password-two"></button>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        Copied to clipboard
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

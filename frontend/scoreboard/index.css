@@ -1,0 +1,212 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: Score;
+  src: url(./font/CursedTimerUlil-Aznm.ttf);
+}
+
+@font-face {
+  font-family: Teams;
+  src: url(./font/Graduate-Regular.ttf);
+}
+
+.title {
+  font-family: Teams;
+  color: white;
+  text-align: center;
+}
+
+.score {
+  font-family: Score;
+}
+
+h1 {
+  font-size: 8rem;
+  padding: 1.5rem 1rem 0 1.1rem;
+}
+
+h2 {
+  font-size: 6rem;
+  padding: 1.2rem 1rem 0;
+}
+
+h3 {
+  font-size: 4rem;
+  filter: drop-shadow(0 0.5rem 1rem #080001);
+}
+
+h4{
+  filter: drop-shadow(0 0.5rem 1rem #080001);
+  font-size: 2.5rem;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  background-color: hsl(216, 70%, 20%);
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+#logo {
+  max-width: 20rem;
+  margin: 2rem 0 1rem;
+  filter: drop-shadow(0 0.5rem 1rem #080001);
+}
+
+.container {
+  margin: 5rem auto 2rem;
+  max-width: 80rem;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #132e59;
+  border-radius: 1rem;
+  border: 0.3rem solid white
+}
+
+.column {
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.red {
+  text-shadow: 0 0 1rem hsla(0, 100%, 50%, 0.5);
+  color:#F94F6D;
+}
+
+.scorecard {
+  width: fit-content;
+  display: grid;
+  background-color: #080001;
+  justify-content: right;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.4rem solid #212121;text-align: right;
+}
+
+.score {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.score.faded {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  z-index: 1;
+  color: #212121;
+}
+
+.time-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  padding-left: 1rem;
+}
+
+button {
+  font-family: Score;
+  font-size: 2rem;
+  min-width: 5rem;
+  height: 5rem;
+  background-color: #2059ae;
+  color: #ccdaff;
+  border: 0.4rem solid #9aabd818;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0 0.3rem #0d3c81;
+  position: relative;
+  filter: drop-shadow(0 -0.4rem 0.5rem #08000173);
+}
+
+button:hover {
+  cursor: pointer;
+  color: #dee2ed;
+  background-color: hsl(216, 69%, 50%);
+  box-shadow: 0 0.4rem 0 0.3rem hsl(216, 82%, 32%);
+}
+
+button:active {
+  color: #ffffff;
+  box-shadow: 0 0.1rem 0 0.3rem hsl(216, 82%, 42%);
+  top: 0.3rem;
+}
+
+.small {
+  min-width: 3.2rem;
+  height: 3.2rem;
+}
+
+.single {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.score-buttons {
+  margin-top: 0.5rem;
+  padding: 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#reset-button {
+  background-color: hsl(340, 69%, 40%);
+  box-shadow: 0 0.4rem 0 0.3rem hsl(340, 82%, 28%);
+  border-color: hsla(348, 44%, 73%, 0.16);
+}
+
+#reset-button:hover {
+  cursor: pointer;
+  color: #dee2ed;
+  background-color: hsl(340, 69%, 50%);
+  box-shadow: 0 0.4rem 0 0.3rem hsl(340, 82%, 32%);
+}
+
+#reset-button:active {
+  color: #ffffff;
+  box-shadow: 0 0.2rem 0 0.3rem hsl(340, 82%, 42%);
+  top: 0.4rem;
+}
+
+header {
+  font-family: 'Tahoma';
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 0.7rem 0.7rem 1rem;
+  min-width: 16rem;
+  width: min-content;
+  border-radius: 0;
+  text-align: center;
+  color: #fff;
+  background: #1c3152;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  transform: translateX(calc(50vw - 100%));
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+header a {
+  color: #fff;
+}
