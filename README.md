@@ -1,8 +1,8 @@
-# Siku Dev
+# Siku
 
 #### Tracking my journey to becoming a programmer.
 
-#### Projects at [SikuDev.Github.io](https://sikudev.github.io/)
+#### Projects at [SikuAudio.Github.io](https://sikuaudio.github.io/)
 ##### All source code is found in this repo.
 
 ## Resources
