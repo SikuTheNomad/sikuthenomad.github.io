@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 * {
   cursor: url(images/cursor.png), auto;
   background-color: rgb(20, 20, 20);
   text-align: center;
   color: white;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", "Courier New", monospace;
   /* font-variant: small-caps; */
   font-weight: 100;
 }
@@ -18,8 +18,8 @@ body::-webkit-scrollbar {
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
   height: 100vh;
-  scrollbar-width: none;  /* Firefox */
-} 
+  scrollbar-width: none; /* Firefox */
+}
 
 img:hover {
   cursor: url("images/cursorHover.png"), auto;
@@ -57,19 +57,14 @@ h2 {
   background-color: transparent;
 }
 
-h3, a {
+h3,
+a {
   letter-spacing: 2px;
   font-size: 28px;
   background-color: transparent;
   text-decoration: none;
   padding: 0;
   margin: 0;
-}
-
-p {
-  letter-spacing: 1px;
-  font-size: 26px;
-  background-color: transparent;
 }
 
 a:hover {
@@ -93,3 +88,53 @@ a.name:hover {
   cursor: url("images/cursorHover.png"), auto;
   color: hsl(170, 100%, 50%);
 }
+
+.outline {
+  margin: auto;
+  max-width: 600px;
+  align-content: start;
+}
+
+ul,
+li,
+details,
+summary,
+p {
+  text-align: start;
+}
+
+
+li {
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+details {
+  font-size: 26px;
+}
+
+details > summary {
+}
+
+details > p {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 100;
+  font-size: 26px;
+  margin: 0 0 26px 26px;
+  padding: 0 10px 0 10px;
+  background-color: rgb(30,30,30);
+  width: fit-content;
+}
+
+summary:hover {
+  cursor: url("images/cursorHover.png"), auto;
+  color: hsl(170, 100%, 50%);
+}
+
+/* summary:hover {
+  cursor: url("images/cursorHover.png"), auto;
+  color: turquoise;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
