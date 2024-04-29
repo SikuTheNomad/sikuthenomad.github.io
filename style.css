@@ -131,9 +131,7 @@ summary:hover {
   color: hsl(170, 100%, 50%);
 }
 
-/* summary:hover {
-  cursor: url("images/cursorHover.png"), auto;
-  color: turquoise;
+/* summary {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
