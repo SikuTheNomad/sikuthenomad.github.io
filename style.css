@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 * {
   cursor: url(images/cursor.png), auto;
   background-color: rgb(20, 20, 20);
@@ -67,6 +67,12 @@ a {
   margin: 0;
 }
 
+h4 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
 a:hover {
   cursor: url("images/cursorHover.png"), auto;
   color: turquoise;
@@ -99,30 +105,39 @@ ul,
 li,
 details,
 summary,
+h3,
+h4,
 p {
   text-align: start;
 }
 
+ul {
+  margin: 0;
+}
 
 li {
+  display: inline;
   list-style-type: none;
   line-height: 1.5;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 22px;
+}
+
+li:nth-child(3n):after {
+  content: "\A";
+  white-space: pre;
 }
 
 details {
   font-size: 26px;
 }
 
-details > summary {
-}
-
 details > p {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 100;
-  font-size: 26px;
-  margin: 0 0 26px 26px;
+  font-size: 22px;
+  margin: 15px 0 15px 26px;
   padding: 0 10px 0 10px;
-  background-color: rgb(30,30,30);
   width: fit-content;
 }
 
@@ -131,8 +146,24 @@ summary:hover {
   color: hsl(170, 100%, 50%);
 }
 
-/* summary {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-} */
+summary.subtopic {
+  font-size: 22px;
+}
+
+summary.subtopic {
+  font-size: 20px;
+}
+
+summary.subtopic3 {
+  margin-top: 10px;
+  margin-left: 36px;
+  font-size: 18px;
+  /* font-family: 'Rajdhani', sans-serif; */
+}
+
+ul.two-col {
+  margin: 15px 0 15px 0;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
