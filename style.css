@@ -166,13 +166,13 @@ a.name:hover {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 iframe {
-  width: 365px;
-  height: 165px;
+  width: 100%;
+  aspect-ratio: 73 / 33;
 }
 
 .row {
@@ -181,7 +181,7 @@ iframe {
   justify-content: center;
   align-items: center;
   margin: 0 0 80px;
-  width: 100%
+  width: 100%;
 }
 
 video {
@@ -198,7 +198,7 @@ video {
   aspect-ratio: 9 / 16;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 910px) {
   h2 {
     letter-spacing: 0px;
     font-size: 36px;
@@ -209,6 +209,16 @@ video {
     font-size: 28px;
     letter-spacing: -2px;
     font-weight: 600;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  iframe {
+    width: 365px;
+    height: 165px;
   }
 
   .portrait {
