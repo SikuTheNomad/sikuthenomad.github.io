@@ -223,6 +223,10 @@ video {
     height: 165px;
   }
 
+  .warning {
+    visibility: collapse;
+  }
+
   .portrait {
     width: 315px;
     aspect-ratio: 9 / 16;
