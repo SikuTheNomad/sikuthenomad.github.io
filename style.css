@@ -224,12 +224,12 @@ video {
   }
 
   .portrait {
-    height: 560px;
+    width: 315px;
     aspect-ratio: 9 / 16;
   }
 
   .landscape {
-    width: 560px;
+    width: 700px;
     aspect-ratio: 16 / 9;
   }
 
