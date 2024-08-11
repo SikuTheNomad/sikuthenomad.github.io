@@ -185,12 +185,15 @@ iframe {
 
 video {
   margin-top: 10px;
+}
+
+.landscape {
   width: 300px;
   aspect-ratio: 16 / 9;
 }
 
 .portrait {
-  width: 100px;
+  width: 200px;
   aspect-ratio: 9 / 16;
 }
 
