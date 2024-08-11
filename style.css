@@ -10,7 +10,6 @@
   margin: 0;
 }
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
@@ -19,9 +18,10 @@ body::-webkit-scrollbar {
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   scrollbar-width: none; /* Firefox */
   padding-top: 100px;
+  padding: 100px 20px 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -121,7 +121,7 @@ a.name:hover {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 560px 560px;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   row-gap: 50px;
 }
@@ -151,20 +151,72 @@ a.name:hover {
   margin: 40px auto;
 }
 
-.flex-cont{
+.flex-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin: 20px auto 60px
+  margin: 20px auto 60px;
 }
 
 .coding {
   margin-top: 40px;
   gap: 80px;
+  width: 80%;
+}
+
+img {
+  width: 300px;
+  height: 300px;
 }
 
 iframe {
   width: 365px;
   height: 165px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 80px;
+}
+
+video {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto 80px;
+  }
+
+  .first,
+  .third,
+  .fifth {
+    flex-direction: row-reverse;
+  }
+
+  .second,
+  .fourth,
+  .sixth {
+    flex-direction: row;
+  }
+
+  .first-text *,
+  .third-text *,
+  .fifth-text * {
+    text-align: left;
+  }
+
+  .second-text *,
+  .fourth-text *,
+  .sixth-text * {
+    text-align: right;
+  }
 }
