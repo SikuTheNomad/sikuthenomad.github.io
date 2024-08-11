@@ -112,9 +112,11 @@ a.name:hover {
 
 .links {
   display: flex;
+  height: 50%;
   flex-direction: column;
   gap: 40px;
   margin: 40px auto;
+  justify-content: center;
 }
 
 .embed-frame {
