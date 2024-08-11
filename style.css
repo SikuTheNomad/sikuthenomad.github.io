@@ -185,6 +185,13 @@ iframe {
 
 video {
   margin-top: 10px;
+  width: 300px;
+  aspect-ratio: 16 / 9;
+}
+
+.portrait {
+  width: 200px;
+  aspect-ratio: 9 / 16;
 }
 
 @media only screen and (min-width: 768px) {
