@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 * {
   cursor: url(images/cursor.png), auto;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(18, 18, 18);
   text-align: center;
   color: white;
   font-family: "Major Mono Display", "Courier New", monospace;
@@ -38,11 +38,11 @@ hr {
   margin-top: 16px;
   margin-bottom: 16px;
   border: none;
-  border: 0px solid rgba(20, 20, 20, 0);
+  border: 0px solid rgba(18, 18, 18, 0);
 }
 
 hr.solid {
-  border: 0px solid rgba(20, 20, 20, 0);
+  border: 0px solid rgba(18, 18, 18, 0);
 }
 
 h1 {
@@ -110,6 +110,13 @@ a.name:hover {
   color: hsl(170, 100%, 50%);
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px auto;
+}
+
 .embed-frame {
   display: grid;
   align-items: center;
@@ -129,7 +136,7 @@ a.name:hover {
 
 .top {
   transform: translate(-50%, 0%);
-  background: rgba(20, 20, 20);
+  background: rgba(18, 18, 18);
   position: fixed;
   left: 50%;
   top: 0%;
@@ -137,11 +144,24 @@ a.name:hover {
   padding: 20px;
 }
 
-.tracklist, .sets {
+.music {
+  /* display: flex;
+  flex-direction: column;
+  gap: 30px; */
+  margin: 40px auto;
+}
+
+.flex-cont{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  margin: 20px auto 60px
+}
+
+.coding {
+  margin-top: 40px;
+  gap: 80px;
 }
 
 iframe {
