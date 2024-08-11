@@ -180,7 +180,8 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 80px;
+  margin: 0 0 80px;
+  width: 100%
 }
 
 video {
@@ -188,12 +189,12 @@ video {
 }
 
 .landscape {
-  width: 300px;
+  width: 100%;
   aspect-ratio: 16 / 9;
 }
 
 .portrait {
-  width: 200px;
+  width: 80%;
   aspect-ratio: 9 / 16;
 }
 
