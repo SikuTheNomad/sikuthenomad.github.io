@@ -20,6 +20,7 @@
 
 #Custom Directories
 design/
+.vscode
 
 #Custom Files
 style-guide.md
