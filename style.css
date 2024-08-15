@@ -194,6 +194,10 @@ h4 {
     font-size: 20px;
   }
 
+  .links {
+    transform: translateY(-1rem);
+  }
+
   .contact {
     gap: 0 2rem;
   }
