@@ -208,7 +208,7 @@ h4 {
   }
 
   .footer {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   #content {
