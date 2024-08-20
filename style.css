@@ -187,6 +187,10 @@ h3 {
   margin: 1rem auto;
 }
 
+#music > h2 {
+  margin: 0rem auto;
+}
+
 h4 {
   width: 70%;
 }
