@@ -16,11 +16,9 @@
 .prettierignore
 
 # Custom File Extensions
-# *.scss
+
 
 #Custom Directories
-design/
 .vscode
 
 #Custom Files
-style-guide.md
