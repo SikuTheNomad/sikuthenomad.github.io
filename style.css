@@ -43,10 +43,13 @@ body {
   margin: 0.66rem auto 0.66rem;
 }
 
+footer {
+  margin-top: 0.25rem;
+}
+
 .contact {
-  margin: 0.33rem;
+  margin: 0.5rem auto;
   display: flex;
-  flex-wrap: wrap;
   gap: 0 1.5rem;
   justify-content: center;
 }
@@ -175,6 +178,7 @@ a,
 a:visited {
   color: white;
   text-decoration: none;
+  height: min-content;
 }
 
 a:hover,
@@ -188,7 +192,7 @@ h1 {
 
 h2,
 h3 {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 
 #music > h2 {
@@ -215,14 +219,6 @@ h4 {
 
   .links {
     transform: translateY(-1rem);
-  }
-
-  .contact {
-    gap: 0 1rem;
-  }
-
-  .footer {
-    flex-direction: row;
   }
 
   #content {
