@@ -1,3 +1,8 @@
+#sequencer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .step-row {
   display: flex;
   /* Align buttons in a row */
@@ -36,4 +41,3 @@
   /* Center the text within the label */
   align-self: center;
 }
-
