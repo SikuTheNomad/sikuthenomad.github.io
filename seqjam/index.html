@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+
+<head>
+  <meta name="darkreader-lock" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="JamSeq" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jam//Seq</title>
+<script defer src="seqjam.js"></script></head>
+
+<body>
+  <button id="start-btn">stArt</button>
+  <div id="main">
+    <div id="band"></div>
+    <div id="selectors">
+      <button id="sound-reset-button">reset sounds</button>
+      <div id="note-selectors">
+        <button id="root-down">&lt</button>
+        <label id="root-label"></label>
+        <button id="root-up">&gt</button>
+        <button id="oct-down">&lt</button>
+        <label id="oct-label"></label>
+        <button id="oct-up">&gt</button>
+        <select id="scale-selector"></select>
+        <button id="clear-button">clear steps</button>
+      </div>
+      <div id="mixer-selectors">
+        <button id="vol-reset-button">reset volumes</button>
+        <button id="mute-all-button">mute all</button>
+        <button id="unsolo-all-button">solo all</button>
+      </div>
+    </div>
+    <div id="player">
+      <div id="sounds"></div>
+      <div id="sequencer"></div>
+      <div id="mixer"></div>
+    </div>
+  </div>
+</body>
+
+</html>
