@@ -18,8 +18,16 @@ html {
   font-family: "Major Mono Display", "Courier New", monospace;
   text-align: center;
   font-weight: 100;
-  background-color: rgb(18, 18, 18);
+  /* background-color: rgb(18, 18, 18); */
   color: white;
+  background: url(/images/index_bg.jpg);
+  background-size: 2160px;
+}
+
+body {
+  background: url(/images/bg_overlay.webp);
+  background-size: contain;
+  background-position: center;
 }
 
 /** Layout */
@@ -82,8 +90,7 @@ img.icon:hover {
 }
 
 #warning {
-  visibility: collapse;
-  margin-top: 1rem;
+  display: none;
 }
 
 #music,
@@ -187,7 +194,8 @@ a h1:hover {
 }
 
 h1 {
-  line-height: 2rem;
+  line-height: 1.33rem;
+  font-size: 1.618rem;
 }
 
 h2,
@@ -226,25 +234,36 @@ h4 {
   }
 
   #warning {
-    visibility: visible;
+    margin-top: 0.618rem;
+    display: block;
   }
 
   #coding {
-    margin-top: 2rem;
+    margin-top: 0.618rem;
   }
 
   .description,
   .row,
-  .rv,
-  .rt,
-  .lt,
-  .rh,
-  .lh {
+  .rv {
     text-align: center;
     flex-direction: column;
-    justify-content: center;
     margin: auto;
+    justify-content: center;
   }
+
+  .rt,
+  .lt {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .rh,
+  .lh {
+    width: 100%;
+    text-align: right;
+  }
+
 
   .landscape,
   .portrait,
